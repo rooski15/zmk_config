@@ -1,0 +1,5 @@
+# Copyright (c) 2022 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+config SHIELD_NO2_CONTROLLER
+	def_bool $(shields_list_contains,no2_controller)

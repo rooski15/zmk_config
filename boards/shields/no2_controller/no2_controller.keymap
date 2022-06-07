@@ -1,0 +1,37 @@
+/*
+ * Copyright (c) 2022 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+ #include <behaviors.dtsi>
+ #include <dt-bindings/zmk/keys.h>
+ #include <dt-bindings/zmk/bt.h>
+ 
+ #define DEFAULT 0
+ #define RAISE 1
+ / {
+     keymap {
+         compatible = "zmk,keymap";
+ 
+         default_layer {
+//
+//-----Shoulder bumpers-----
+//    K1              K2
+//-------Main Keys----------
+//     K3        K4  K5
+//   K6  K7
+//     K8        K9  K10
+//        K11 K12
+//--------------------------
+
+             bindings = <
+                &kp Q                &kp E
+                  &kp W        &kp O  &kp P
+              &kp A  &kp S
+                  &kp D        &kp K  &kp L
+                      &kp N  &kp M
+             >;
+         };
+     };
+ };
